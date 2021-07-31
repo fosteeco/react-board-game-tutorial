@@ -69,7 +69,7 @@ class Game extends React.Component {
       return;
     }
     squares[i] = this.state.xIsNext ? "X" : "O";
-    let moveString = "" + squares[i] + " @ square " + i;
+    let moveString = "" + squares[i] + " @ square " + parseInt(i + 1);
 
     this.setState({
       history: history.concat([{ squares: squares }]),
